@@ -3,7 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {map, Observable} from "rxjs";
 import * as moment from "moment";
 
-interface Taskk {
+export interface Taskk {
   id?: string
   title: string
   date?: string
