@@ -8,6 +8,7 @@ import { OrganaizerComponent } from './organaizer/organaizer.component';
 import {MomentPipe} from "./shared/moment.pipe";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {HighlightDirective} from "./shared/highlight.directive";
 
 @NgModule({
   declarations: [
@@ -15,13 +16,14 @@ import {HttpClientModule} from "@angular/common/http";
     CalendarComponent,
     SelectorComponent,
     OrganaizerComponent,
-    MomentPipe
+    MomentPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

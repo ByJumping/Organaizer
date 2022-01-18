@@ -1,6 +1,7 @@
 <section>
   <header>
     Organaizer: <strong>{{dateService.date | async | moment: 'DD.MM.YYYY'}}</strong>
+
     <hr />
   </header>
 
@@ -16,7 +17,7 @@
     </ul>
 
     <ng-template #noTasks>
-      <p class="text-center">No tasks yet...</p>
+      <p class="text-center" *dupContent="true">No tasks yet...</p>
     </ng-template>
   </main>
 
